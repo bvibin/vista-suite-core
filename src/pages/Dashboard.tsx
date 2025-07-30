@@ -6,28 +6,28 @@ import { Button } from "@/components/ui/button";
 
 const metricsData = [
   {
-    title: "Total Revenue",
-    value: "$1,250.00",
+    title: "Active Promos",
+    value: "68",
     trend: { value: "+12.5%", isPositive: true },
-    subtitle: "Trending up this month"
+    subtitle: "Live promotional campaigns"
   },
   {
-    title: "New Customers",
-    value: "1,234",
-    trend: { value: "-20%", isPositive: false },
-    subtitle: "Down 20% this period"
+    title: "Validation Rate",
+    value: "94.2%",
+    trend: { value: "+5.3%", isPositive: true },
+    subtitle: "Successfully validated promos"
   },
   {
-    title: "Active Accounts",
-    value: "45,678",
-    trend: { value: "+12.5%", isPositive: true },
-    subtitle: "Strong user retention"
+    title: "Error Rate",
+    value: "2.1%",
+    trend: { value: "-1.2%", isPositive: true },
+    subtitle: "Down from last period"
   },
   {
-    title: "Growth Rate",
-    value: "4.5%",
-    trend: { value: "+4.5%", isPositive: true },
-    subtitle: "Steady performance"
+    title: "Campaign Performance",
+    value: "87.5%",
+    trend: { value: "+3.1%", isPositive: true },
+    subtitle: "Overall success rate"
   }
 ];
 
@@ -78,9 +78,9 @@ export default function Dashboard() {
         <CardHeader>
           <div className="flex items-center justify-between">
             <div>
-              <CardTitle className="text-card-foreground">Total Visitors</CardTitle>
+              <CardTitle className="text-card-foreground">Promo Validation Trends</CardTitle>
               <p className="text-sm text-muted-foreground mt-1">
-                Total for the last 3 months
+                Validation performance over the last 3 months
               </p>
             </div>
             <div className="flex gap-2">

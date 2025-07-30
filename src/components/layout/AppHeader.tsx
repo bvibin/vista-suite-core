@@ -7,9 +7,8 @@ import { useState, useEffect } from "react";
 const headerTabs = [
   { title: "Cards", url: "/cards" },
   { title: "Dashboard", url: "/" },
-  { title: "Mail", url: "/mail" },
-  { title: "Pricing", url: "/pricing" },
-  { title: "Color Palette", url: "/colors" },
+  { title: "Promo Validation", url: "/promo-validation" },
+  { title: "Analytics", url: "/analytics" },
 ];
 
 export function AppHeader() {

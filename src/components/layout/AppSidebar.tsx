@@ -37,24 +37,17 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 
 const mainItems = [
-  { title: "Quick Create", url: "/quick-create", icon: PlusCircle, featured: true },
   { title: "Dashboard", url: "/", icon: BarChart3 },
-  { title: "Mail", url: "/mail", icon: Mail },
-  { title: "Pricing", url: "/pricing", icon: CreditCard },
-  { title: "Color Palette", url: "/colors", icon: Palette },
 ];
 
 const workflowItems = [
-  { title: "Lifecycle", url: "/lifecycle", icon: LifeBuoy },
+  { title: "Promo Validation", url: "/promo-validation", icon: Mail },
   { title: "Analytics", url: "/analytics", icon: TrendingUp },
   { title: "Projects", url: "/projects", icon: FolderKanban },
   { title: "Team", url: "/team", icon: Users },
 ];
 
 const documentsItems = [
-  { title: "Data Library", url: "/data-library", icon: Database },
-  { title: "Reports", url: "/reports", icon: FileText },
-  { title: "Word Assistant", url: "/word-assistant", icon: PenTool },
   { title: "More", url: "/more", icon: MoreHorizontal },
 ];
 
@@ -120,7 +113,7 @@ export function AppSidebar() {
           <SidebarGroupContent>
             <SidebarMenu className="space-y-1">
               {mainItems.map((item) => (
-                <NavItem key={item.title} item={item} featured={item.featured} />
+                <NavItem key={item.title} item={item} />
               ))}
             </SidebarMenu>
           </SidebarGroupContent>
