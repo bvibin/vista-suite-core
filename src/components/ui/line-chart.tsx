@@ -1,3 +1,4 @@
+
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, ResponsiveContainer, Area, AreaChart } from 'recharts';
 
 interface LineChartProps {
@@ -12,30 +13,30 @@ export function CustomLineChart({ data, className }: LineChartProps) {
         <AreaChart data={data}>
           <defs>
             <linearGradient id="colorValue" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="hsl(var(--chart-1))" stopOpacity={0.8} />
-              <stop offset="95%" stopColor="hsl(var(--chart-1))" stopOpacity={0.1} />
+              <stop offset="5%" stopColor="var(--chart-1)" stopOpacity={0.8} />
+              <stop offset="95%" stopColor="var(--chart-1)" stopOpacity={0.1} />
             </linearGradient>
             <linearGradient id="colorValue2" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="hsl(var(--chart-2))" stopOpacity={0.8} />
-              <stop offset="95%" stopColor="hsl(var(--chart-2))" stopOpacity={0.1} />
+              <stop offset="5%" stopColor="var(--chart-2)" stopOpacity={0.8} />
+              <stop offset="95%" stopColor="var(--chart-2)" stopOpacity={0.1} />
             </linearGradient>
           </defs>
-          <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+          <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
           <XAxis 
             dataKey="name" 
-            tick={{ fontSize: 12, fill: 'hsl(var(--muted-foreground))' }}
+            tick={{ fontSize: 12, fill: 'var(--muted-foreground)' }}
             axisLine={false}
             tickLine={false}
           />
           <YAxis 
-            tick={{ fontSize: 12, fill: 'hsl(var(--muted-foreground))' }}
+            tick={{ fontSize: 12, fill: 'var(--muted-foreground)' }}
             axisLine={false}
             tickLine={false}
           />
           <Area
             type="monotone"
             dataKey="value"
-            stroke="hsl(var(--chart-1))"
+            stroke="var(--chart-1)"
             fillOpacity={1}
             fill="url(#colorValue)"
             strokeWidth={3}
@@ -44,7 +45,7 @@ export function CustomLineChart({ data, className }: LineChartProps) {
             <Area
               type="monotone"
               dataKey="value2"
-              stroke="hsl(var(--chart-2))"
+              stroke="var(--chart-2)"
               fillOpacity={1}
               fill="url(#colorValue2)"
               strokeWidth={3}
